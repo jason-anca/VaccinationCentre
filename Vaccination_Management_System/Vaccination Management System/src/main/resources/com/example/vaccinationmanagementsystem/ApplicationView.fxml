@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vbox" alignment="CENTER" prefHeight="561.0" prefWidth="717.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vaccinationmanagementsystem.AppController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <SplitPane dividerPositions="0.19703703703703704" prefHeight="292.0" prefWidth="677.0">
+     <items>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="25.0" prefWidth="147.0">
+            <children>
+               <Button fx:id="updateVC" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Update Centre" />
+                <Button fx:id="add" mnemonicParsing="false" onAction="#addVC" prefHeight="25.0" prefWidth="130.0" text="Add Centre" />
+               <Button fx:id="deleteVC" layoutY="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Delete Centre" />
+            </children>
+         </AnchorPane>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="261.0" prefWidth="391.0">
+            <children>
+               <TextField fx:id="VCName" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="539.0" promptText="Name" />
+               <TextField fx:id="Eircode" alignment="TOP_LEFT" layoutY="25.0" prefHeight="25.0" prefWidth="539.0" promptText="Eircode" />
+               <TextField fx:id="VCPhone" layoutY="50.0" prefHeight="25.0" prefWidth="539.0" promptText="Phone Number" />
+               <TextField fx:id="VCAddress" layoutY="75.0" prefHeight="25.0" prefWidth="539.0" promptText="Address" />
+               <TextField fx:id="Parking" layoutY="100.0" prefHeight="25.0" prefWidth="539.0" promptText="Parking Spaces" />
+            </children>
+         </AnchorPane>
+     </items>
+   </SplitPane>
+   <FlowPane prefHeight="200.0" prefWidth="200.0" />
+   <ListView fx:id="list" prefHeight="428.0" prefWidth="677.0" style="-fx-background-color: gray;" />
+</VBox>
